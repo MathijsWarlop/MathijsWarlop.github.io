@@ -5,8 +5,28 @@
     <title>Mathijs Warlop - Game Dev Portfolio</title>
   </head>
   <body>
-    <h1>Hello, I’m Mathijs Warlop, testtest</h1>
+    <h1>Hello, I’m Mathijs Warlop 👋</h1>
     <p>Welcome to my game development portfolio.</p>
-    <p>Check out my projects and experiments below!</p>
+
+    <h2>Projects</h2>
+
+    <div>
+      <h3>Galaga Clone</h3>
+      <p>A C++/SDL project where I recreated the classic Galaga arcade game.</p>
+      <a href="https://github.com/MathijsWarlop/GalagaProject" target="_blank">View on GitHub</a>
+    </div>
+
+    <div>
+      <h3>Cake Climber (Unity)</h3>
+      <p>A two-player Unity game where players climb a cake while avoiding hazards.</p>
+      <a href="https://your-itch-link.com" target="_blank">Play on itch.io</a>
+    </div>
+
+    <div>
+      <h3>Shader Playground</h3>
+      <p>Collection of custom DirectX 11 shaders with effects like point, linear, and anisotropic.</p>
+      <a href="https://github.com/MathijsWarlop/ShaderPlayground" target="_blank">View on GitHub</a>
+    </div>
+
   </body>
 </html>
