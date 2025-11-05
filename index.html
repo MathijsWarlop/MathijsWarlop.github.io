@@ -67,7 +67,28 @@
     .about h2 {
       border-bottom: 2px solid #4da3ff;
       padding-bottom: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    .about-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #4da3ff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
     }
 
     .about-info {
@@ -124,6 +145,16 @@
       header h1 {
         font-size: 2em;
       }
+
+      .profile-pic {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .about-flex {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -139,19 +170,25 @@
     <!-- About Section -->
     <section class="about">
       <h2>About Me</h2>
-      <div class="about-info">
-        <div><strong>Location:</strong> Roeselare, Belgium</div>
-        <div><strong>Phone:</strong> +32 468 31 29 37</div>
-        <div><strong>Email:</strong> <a href="mailto:Mathijs.warlop@gmail.com">Mathijs.warlop@gmail.com</a></div>
-        <div><strong>License:</strong> Driver License</div>        
-        <div><strong>Languages:</strong> Dutch, English</div>
-        <div><strong>Education:</strong> DAE Game Development (Expected Graduation June 2026)</div>
-      </div>
+      <div class="about-flex">
+        <img src="images/PictureFace.jpg" alt="Mathijs Warlop" class="profile-pic">
 
-      <p style="margin-top:15px;">
-        Passionate about game programming, rendering, and gameplay systems. Experienced with <strong>C++, SDL, and Unity</strong>.
-        I’m seeking an internship from <strong>mid-February 2026 to mid-June 2026</strong> where I can grow my technical skills and collaborate in a creative team environment.
-      </p>
+        <div class="about-text">
+          <div class="about-info">
+            <div><strong>Location:</strong> Roeselare, Belgium</div>
+            <div><strong>Phone:</strong> +32 468 31 29 37</div>
+            <div><strong>Email:</strong> <a href="mailto:Mathijs.warlop@gmail.com">Mathijs.warlop@gmail.com</a></div>
+            <div><strong>License:</strong> Driver License</div>        
+            <div><strong>Languages:</strong> Dutch, English</div>
+            <div><strong>Education:</strong> DAE Game Development (Expected Graduation June 2026)</div>
+          </div>
+
+          <p style="margin-top:15px;">
+            Passionate about game programming, rendering, and gameplay systems. Experienced with <strong>C++, SDL, and Unity</strong>.
+            I’m seeking an internship from <strong>mid-February 2026 to mid-June 2026</strong> where I can grow my technical skills and collaborate in a creative team environment.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
