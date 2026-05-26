@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mathijs Warlop - Game Dev Portfolio</title>
+  <title>Mathijs Warlop - Game Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* === Base Styling === */
+
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -22,14 +22,13 @@
     a {
       color: #4da3ff;
       text-decoration: none;
-      transition: color 0.2s ease;
+      transition: 0.2s;
     }
 
     a:hover {
       color: #73c2ff;
     }
 
-    /* === Layout === */
     header {
       background: linear-gradient(135deg, #1c1f26, #252a33);
       padding: 40px 20px;
@@ -45,7 +44,6 @@
     header p {
       max-width: 700px;
       margin: 0 auto;
-      font-size: 1.1em;
       color: #b0b0b0;
     }
 
@@ -55,214 +53,188 @@
       padding: 0 20px;
     }
 
-    /* === About Section === */
     .about {
       background: #1a1d24;
       border-radius: 12px;
       padding: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       margin-bottom: 40px;
-    }
-
-    .about h2 {
-      border-bottom: 2px solid #4da3ff;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
     }
 
     .about-flex {
       display: flex;
-      align-items: flex-start;
       gap: 25px;
       flex-wrap: wrap;
     }
 
     .profile-pic {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
+      width: 170px;
+      height: 170px;
       border-radius: 50%;
+      object-fit: cover;
       border: 3px solid #4da3ff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-
-    .about-text {
-      flex: 1;
-      min-width: 250px;
     }
 
     .about-info {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 12px;
       font-size: 0.95em;
     }
 
     .about-info div {
-      flex: 1 1 250px;
       background: #20242d;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 6px;
     }
 
-    /* === Project Cards === */
     .project-card {
       background: #1a1d24;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 25px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: 0.2s;
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transform: translateY(-4px);
     }
 
     .project-card img {
       width: 100%;
       max-width: 400px;
-      border-radius: 8px;
-      display: block;
       margin-bottom: 10px;
-    }
-
-    .project-card p {
-      color: #c9c9c9;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 25px 0;
-      border-top: 2px solid #333;
-      color: #888;
-      font-size: 0.9em;
+      padding: 25px;
+      color: #777;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      .profile-pic {
-        margin: 0 auto;
-        display: block;
-      }
-
-      .about-flex {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Mathijs Warlop</h1>
-    <p>Aspiring Game Developer from Belgium — passionate about C++, gameplay programming, and Unity. Currently studying Game Development at DAE (Howest).</p>
-  </header>
+<header>
+  <h1>Mathijs Warlop</h1>
+  <p>
+    Game Development student at DAE (Howest), focused on building gameplay systems, interactive tools, and real-time applications using C++ and Unity.
+  </p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <div class="about-flex">
-        <img src="images/PictureFace.jpg" alt="Mathijs Warlop" class="profile-pic">
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
 
-        <div class="about-text">
-          <div class="about-info">
-            <div><strong>Location:</strong> Roeselare, Belgium</div>
-            <div><strong>Phone:</strong> +32 468 31 29 37</div>
-            <div><strong>Email:</strong> <a href="mailto:Mathijs.warlop@gmail.com">Mathijs.warlop@gmail.com</a></div>
-            <div><strong>License:</strong> Driver License</div>        
-            <div><strong>Languages:</strong> Dutch, English</div>
-            <div><strong>Education:</strong> DAE Game Development (Expected Graduation June 2026)</div>
-          </div>
+    <div class="about-flex">
+      <img src="images/PictureFace.jpg" class="profile-pic">
 
-          <p style="margin-top:15px;">
-            I’m a passionate Game Developer focused on gameplay programming, rendering, and interactive systems. I work mainly with 
-            <strong>C++, SDL, and Unity</strong>, and I enjoy solving technical challenges and building polished player experiences.
-            <br><br>
-            I recently completed an internship at the <strong>National Lottery</strong>, where I developed an educational Unity game and integrated it into FlowSpark using SCORM. 
-            I also gained hands-on VR development experience through a <strong>Unity VR group project</strong> at DAE.
-          </p>
+      <div>
+        <div class="about-info">
+          <div><strong>Location:</strong> Roeselare, Belgium</div>
+          <div><strong>Email:</strong> <a href="mailto:Mathijs.warlop@gmail.com">Mathijs.warlop@gmail.com</a></div>
+          <div><strong>Phone:</strong> +32 468 31 29 37</div>
+          <div><strong>Languages:</strong> Dutch, English</div>
+          <div><strong>Education:</strong> DAE Game Development (2026)</div>
         </div>
+
+        <p style="margin-top:15px;">
+          I’m a Game Development student focused on building interactive systems and gameplay experiences.
+          I mainly work with <strong>C++, SDL, and Unity</strong> and enjoy solving technical challenges and improving my understanding of real-time systems.
+          <br><br>
+          Rather than specializing too early, I aim to build a strong foundation across gameplay programming, rendering, and tools development.
+          <br><br>
+          During my internship at the <strong>National Lottery</strong>, I developed Unity WebGL training applications and integrated them into <strong>Flowsparks using SCORM</strong>.
+          This gave me hands-on experience with real users, structured workflows, and production-ready tools.
+        </p>
       </div>
-    </section>
-
-    <!-- Experience Section -->
-    <h2>Experience</h2>
-
-    <div class="project-card">
-      <h3>Internship – National Lottery (Unity Developer)</h3>
-      <p>
-        Developed an educational Unity game for internal training purposes and integrated it into FlowSpark using SCORM. 
-        Worked within a SCRUM workflow, attending stand-ups and collaborating with the team. 
-        Implemented interactive gameplay and UI elements to support learning objectives.
-      </p>
     </div>
+  </section>
 
-    <!-- Projects Section -->
-    <h2>Projects</h2>
+  <!-- Experience -->
+  <h2>Experience</h2>
 
-    <div class="project-card">
-  <h3>VR Group Project (Unity)</h3>
-  <iframe width="100%" height="315" 
-          src="https://www.youtube.com/embed/7lcbhSSyRKs" 
-          title="VR Project Showcase" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-  </iframe>
-  <p>
-    A VR project developed as part of a DAE group assignment. I contributed to gameplay programming, interaction systems, and overall Unity development workflow.
-  </p>
-</div>
-
-
-    <div class="project-card">
-  <h3>Bitymi Group Project (Unity)</h3>
-
-  <iframe width="100%" height="315"
-          src="https://www.youtube.com/embed/ZS1UQPGMPz8"
-          title="Bitymi Gameplay Trailer"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-  </iframe>
-
-  <p>
-    A cooperative tower-climbing game created in Unity. I was mainly responsible for player movement, abilities, and UI implementation.
-  </p>
-
-  <a href="https://therambi.itch.io/bitymi" target="_blank">🎮 Play on itch.io</a>
-</div>
-
-
-    <div class="project-card">
-      <h3>Raytracer & Rasteriser</h3>
-      <img src="images/Raytracer.png" alt="Raytracer Screenshot">
-      <img src="images/rasteriser.png" alt="Rasteriser Screenshot">
-      <p>Projects built to demonstrate 3D rendering techniques and an understanding of the graphics pipeline.</p>
-      <a href="https://github.com/MathijsWarlop/RaytracerSlashRasteriser" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Galaga Clone (C++ / SDL)</h3>
-      <img src="images/Galaga.png" alt="Galaga Screenshot">
-      <p>A C++/SDL recreation of the classic Galaga arcade game, featuring player movement, enemy waves, and shooting mechanics.</p>
-      <a href="https://github.com/MathijsWarlop/GalagaAssignmentv2" target="_blank">🔗 View on GitHub</a>
-    </div>
-
+  <div class="project-card">
+    <h3>Internship – National Lottery (Unity Developer)</h3>
+    <p>
+      Developed interactive Unity WebGL applications for internal training and deployed them via Flowsparks (SCORM).
+      <br><br>
+      Worked on gameplay systems, UI, localisation workflows, and dialogue systems.  
+      Collaborated in a SCRUM team with daily stand-ups and iterative development.
+    </p>
   </div>
 
-  <footer>
-    © 2025 Mathijs Warlop | Game Developer | Built with HTML & CSS
-  </footer>
+  <!-- Projects -->
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Food Impact & Sales Star (Unity WebGL)</h3>
+    <p>
+      Two training applications developed during my internship.
+      <br><br>
+      <strong>Food Impact:</strong> A supermarket game focused on sustainability and environmental impact of product choices.  
+      <br>
+      <strong>Sales Star:</strong> A simulation that trains employees in customer interaction and store presentation.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>VR Group Project (Unity)</h3>
+
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/7lcbhSSyRKs"
+      frameborder="0" allowfullscreen></iframe>
+
+    <p>
+      A VR project developed at DAE.  
+      Focused on interaction systems and gameplay programming within a team environment.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>Bitymi – Group Project (Unity)</h3>
+
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/ZS1UQPGMPz8"
+      frameborder="0" allowfullscreen></iframe>
+
+    <p>
+      A cooperative tower-climbing game created in Unity.  
+      Implemented player movement, abilities, and UI systems.
+    </p>
+
+    <a href="https://therambi.itch.io/bitymi" target="_blank">🎮 Play on itch.io</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Raytracer & Rasteriser (C++)</h3>
+    <img src="images/Raytracer.png">
+    <img src="images/rasteriser.png">
+    <p>
+      Graphics programming projects demonstrating understanding of the rendering pipeline,
+      lighting, and low-level rendering techniques.
+    </p>
+    <a href="https://github.com/MathijsWarlop/RaytracerSlashRasteriser" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Galaga Clone (C++ / SDL)</h3>
+    <img src="images/Galaga.png">
+    <p>
+      Recreation of the classic Galaga game with player movement, enemy waves, and shooting mechanics.
+    </p>
+    <a href="https://github.com/MathijsWarlop/GalagaAssignmentv2" target="_blank">View on GitHub</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Mathijs Warlop - Game Developer
+</footer>
 
 </body>
 </html>
